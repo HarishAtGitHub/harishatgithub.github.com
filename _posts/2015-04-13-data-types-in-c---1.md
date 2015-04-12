@@ -24,6 +24,7 @@ This is based on visible facts .
 The fact is that everything is explicitly mentioned in /usr/include/limits.h and
 C obeys it .
 This file has
+
 ```c
 #include <bits/wordsize.h>
 .
