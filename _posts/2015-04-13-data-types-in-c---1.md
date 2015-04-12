@@ -109,8 +109,9 @@ The snippet goes as follows
 so in 64 bit machines the unsigned long has maximum value of 18446744073709551615 and in others it is 4294967295 .
 
 So this proves that both hardware and software were involved in the design of the range of data types.
+But lets get in a level deep and analyze ..
 
-#### But what actually influenced the decision of the range ?
+#### But what actually from the hardware side would have influenced the decision of the range ?
 
 I did not find facts anywhere related to this question , except a few surmisals (links can be found in reference section) .
 May be it was dependent on the word size .
