@@ -154,7 +154,7 @@ So in a way the word-size would have influenced the decision on the range of the
 
 **References :**
 
-1. http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504
+1. <a href="http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504">http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504</a>
 2. http://stackoverflow.com/questions/29592898/do-long-long-and-long-have-same-range-in-c-in-64-bit-machine
 3. http://stackoverflow.com/questions/13403880/how-can-a-16bit-processor-have-4-byte-sized-long-int
 4. http://www.bcastell.com/tech-articles/how-does-word-length-affect-the-performance-and-operation-of-a-cpu/
