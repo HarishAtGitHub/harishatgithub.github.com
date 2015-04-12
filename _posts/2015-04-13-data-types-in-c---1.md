@@ -79,16 +79,12 @@ This file has
 #  else
 #   define ULONG_MAX	4294967295UL
 #  endif
-
 #  ifdef __USE_ISOC99
-
 /* Minimum and maximum values a `signed long long int' can hold.  */
 #   define LLONG_MAX	9223372036854775807LL
 #   define LLONG_MIN	(-LLONG_MAX - 1LL)
-
 /* Maximum value an `unsigned long long int' can hold.  (Minimum is 0.)  */
 #   define ULLONG_MAX	18446744073709551615ULL
-
 #  endif /* ISO C99 */
 
 
@@ -117,16 +113,16 @@ I did not find facts anywhere related to this question , except a few surmisals 
 May be it was dependent on the word size .
 
         By the way what is machine-word size ?
-        It is the fundamental unit of data for a processor . For example if it is an n-bit machine , we can infer to          an extent that the internal bus used is n-bit size and the basic registers are n-bit .
+        It is the fundamental unit of data for a processor . For example if it is an n-bit machine , we can infer to an extent that the internal bus used is n-bit size and the basic registers are n-bit .
         
 
 You can see some correlation here in the following (mostly this is common, but there might be exceptions)
 
 in **16 bit(2 byte)** machines 
-short int range(2 bytes) = **int** range(2 bytes) < long int range (4 bytes)
+short int range(2 bytes) = **int range(2 bytes)** < long int range (4 bytes)
 
 in **32 bit(4 byte)** machines
-short int range(2 bytes) < **int** range(4 bytes) = long int(4 bytes)
+short int range(2 bytes) < **int range(4 bytes)** = long int(4 bytes)
 
 in **64 bit(8 byte)** machines
 short int(2 bytes) < **int(4 bytes)** < long int
