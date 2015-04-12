@@ -25,7 +25,8 @@ The fact is that everything is explicitly mentioned in /usr/include/limits.h and
 C obeys it .
 This file has
 
-```c
+<pre>
+  <code class="c">
 #include <bits/wordsize.h>
 .
 .
@@ -87,7 +88,8 @@ This file has
 /* Maximum value an `unsigned long long int' can hold.  (Minimum is 0.)  */
 #   define ULLONG_MAX	18446744073709551615ULL
 #  endif /* ISO C99 */
-```
+  </code>
+</pre>
 
 So its from here that the information on range in hardcoded .
 
@@ -101,6 +103,7 @@ The snippet goes as follows
 #  else
 #   define ULONG_MAX	4294967295UL
 #  endif
+  </code>
 </pre>
 
 so in 64 bit machines the unsigned long has maximum value of 18446744073709551615 and in others it is 4294967295 .
