@@ -155,11 +155,11 @@ So in a way the word-size would have influenced the decision on the range of the
 **References :**
 
 1. <a href="http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504">http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504</a>
-2. http://stackoverflow.com/questions/29592898/do-long-long-and-long-have-same-range-in-c-in-64-bit-machine
-3. http://stackoverflow.com/questions/13403880/how-can-a-16bit-processor-have-4-byte-sized-long-int
-4. http://www.bcastell.com/tech-articles/how-does-word-length-affect-the-performance-and-operation-of-a-cpu/
-5. http://en.wikipedia.org/wiki/Word_%28computer_architecture%29
-6. http://superuser.com/questions/698312/if-32-bit-machines-can-only-handle-numbers-up-to-232-why-can-i-write-100000000
-7. http://electronics.stackexchange.com/questions/106933/how-different-are-8-bit-microcontrollers-from-32-bit-microcontrollers-when-it-co
+2. <a href="http://stackoverflow.com/questions/29592898/do-long-long-and-long-have-same-range-in-c-in-64-bit-machine">http://stackoverflow.com/questions/29592898/do-long-long-and-long-have-same-range-in-c-in-64-bit-machine</a>
+3. <a href="http://stackoverflow.com/questions/13403880/how-can-a-16bit-processor-have-4-byte-sized-long-int">http://stackoverflow.com/questions/13403880/how-can-a-16bit-processor-have-4-byte-sized-long-int</a>
+4. <a href="http://www.bcastell.com/tech-articles/how-does-word-length-affect-the-performance-and-operation-of-a-cpu/">http://www.bcastell.com/tech-articles/how-does-word-length-affect-the-performance-and-operation-of-a-cpu/</a>
+5. <a href="http://en.wikipedia.org/wiki/Word_%28computer_architecture%29">http://en.wikipedia.org/wiki/Word_%28computer_architecture%29</a>
+6. <a href="http://superuser.com/questions/698312/if-32-bit-machines-can-only-handle-numbers-up-to-232-why-can-i-write-100000000">http://superuser.com/questions/698312/if-32-bit-machines-can-only-handle-numbers-up-to-232-why-can-i-write-100000000</a>
+7. <a href="http://electronics.stackexchange.com/questions/106933/how-different-are-8-bit-microcontrollers-from-32-bit-microcontrollers-when-it-co">http://electronics.stackexchange.com/questions/106933/how-different-are-8-bit-microcontrollers-from-32-bit-microcontrollers-when-it-co</a>
 
 
