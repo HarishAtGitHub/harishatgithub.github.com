@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Concurrency and Parallelism   disqus"
+title: "Concurrency and Parallelism   discussion - 1"
 description: ""
 category: Concurrency and Parallelism - Discussion
 tags: [Operating System, OS, Concurrency, Parallelism]
