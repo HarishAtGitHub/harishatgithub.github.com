@@ -13,7 +13,7 @@ Ok having discussed what is process and thread. Lets look at the two ways of mul
 
 1) having multiple processes run in parallel
 
-2) having multiple threds run in parallel
+2) having multiple threads run in parallel
 
 In methodology 1 , the processes have different address space ,so no one is going to conflict the other so there are no(strictly speaking less) problems.
 
