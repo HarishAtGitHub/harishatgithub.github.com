@@ -79,3 +79,4 @@ Note: Any process (in strict sense is said to be single threaded or in other wor
 
 As threads share address space with that of another , they are called light weight processes , mainly because of less overhead involved. 
 
+Read more about Kernel Threads and User space threads <a href="http://harishatgithub.github.io/concurrency%20and%20parallelism%20-%20discussion/2015/04/27/user-space-threads-and-kernel-space-threads/">here</a>.
