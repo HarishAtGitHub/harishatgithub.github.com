@@ -12,6 +12,7 @@ When we speak about Concurrency and Parallelism, the first thing that immediatel
 'Thread' and 'Processes'.
 Let us understand this first and then dive deep into understanding Concurrency and Parallelism.
 
+### Process
 **Process is just an instance of an executing program(or in other words abstraction of a running program), including current values of the program counter, registers, and variables.** - (Andrew. S. Tanenbaum - Author of the book 'Modern Operating Systems')
 
 **But How to verify the above definition ?**
@@ -30,7 +31,7 @@ init --------entry1 ----
         
         -----gnome-terminal 
 and so on .
-Now open a terminal  and run a java program(say)
+Now open a terminal  and run a java program(with a sleep for 50 seconds so that we can sustain the process)(say)
 
 now run
 $pstree
@@ -52,7 +53,7 @@ So this means that any program executed is represented as a process in the opera
 
 Now lets get little deeper .
 
-**How is the process created ?**
+**How is any process created ?**
 
 Clue : One thing to note from the above experiment is the java was created as a child of gnome-terminal.
 
@@ -60,4 +61,6 @@ Every process is created a child of some existing process (here gnome-terminal).
 a system call called **fork** is made to kernel and what it does is it clones(copy of memory image, environment strings, file descriptors) the process that creates this new process . Then this new child process executes the execve or similar system call to change its memory image and run a new program.
 Now finally the child and parent process both have different memory address space so that they can act independetly.
 **So fork creates a new child process with a new address space different from the address space of the parent that creates it.**
+
+
 
