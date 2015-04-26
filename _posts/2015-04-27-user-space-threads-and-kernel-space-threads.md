@@ -39,3 +39,10 @@ Examples:
 3) The above holds good even for <a href="http://jessenoller.com/2009/02/01/python-threads-and-the-global-interpreter-lock/">python</a> which even has a GIL. So here too psuedo parallelism is only possible. (Doubt ???? Guido Van Rossum has a <a href="https://mail.python.org/pipermail/python-3000/2007-May/007414.html">justification</a>.)
 
 
+Other interesting links I found
+
+1) http://stackoverflow.com/questions/10225838/what-use-can-i-give-to-ruby-threads-if-they-are-not-really-parallel
+
+2) http://www.jeffknupp.com/blog/2012/03/31/pythons-hardest-problem/
+
+3) http://www.advancedlinuxprogramming.com/alp-folder/alp-ch04-threads.pdf
