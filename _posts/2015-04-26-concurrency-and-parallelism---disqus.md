@@ -21,9 +21,13 @@ Execute command pstree (a commands to list all the running processes in os)
 $pstree 
 
 init --------entry1 ----
+
         |
+        
         -----entry2 ----
+        
         |
+        
         -----gnome-terminal 
 and so on .
 Now open a terminal  and run a java program(say)
@@ -32,9 +36,13 @@ now run
 $pstree
 
 init --------entry1 ----
+
         |
+        
         -----entry2 ----
+        
         |
+        
         -----gnome-terminal --- java ...
         
         
