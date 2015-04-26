@@ -64,3 +64,18 @@ Now finally the child and parent process both have different memory address spac
 
 
 
+### Thread
+So now what if we want to do multi processing. If our computer had one core then it makes sense to use have one process alone. If we have two cores then it makes sense to run another process in parallel to do the tasks faster.This is called multi processing. So the same program can me relaunched again as a separate process and made to run in the other core. So now each process has its own address space. Ya, so far its good . Because we were able to use both the cores and do more work. But in many scenarios 
+
+1) there is no need for new process to have a new address space. It can share it with the other. It is just waste of memory .
+
+2) there is  compulsion that the two processes need to share address space , if the 2 processes needs to co-operate and work.
+
+This scenarios give rise to the need for facility for processes to share the same address space.
+
+This gives birth to concept of threads.
+
+Note: Any process (in strict sense is said to be single threaded or in other words it has a single thread of execution) has its own address space. When it starts sharing the address space with another it is no longer called a process but instead called a thread.This is just a way of calling it . You are free to call it simply as process that don't share address space and processes that share address space.
+
+As threads share address space with that of another , they are called light weight processes , mainly because of less overhead involved. 
+
