@@ -38,6 +38,14 @@ Examples:
 
 3) The above holds good even for <a href="http://jessenoller.com/2009/02/01/python-threads-and-the-global-interpreter-lock/">python</a> which even has a GIL. So here too psuedo parallelism is only possible. (Doubt ???? Guido Van Rossum has a <a href="https://mail.python.org/pipermail/python-3000/2007-May/007414.html">justification</a>.)
 
+**Personal Stand:(Feel free to override)**
+
+May be the GIL is done so as to have the programming model simple. We know the care we need to take in java to handle multithreading using synchronized blocks or so.Yes thats really difficult in java. So Yes I accept that GIL makes programming simple. Nevertheless, it makes things slower as parallelism is not possible and also due to the check of locks that consumes time. 
+Even Javascript in single threaded. For this very reason of simple programming model and the support for asyn IO by default in javascript engines like V8 made <a href="https://www.youtube.com/watch?v=SAc0vQCC6UQ"> Ryan Dahl</a> pursue developing node in javascript. But how is the delegated work done if there is only one thread ????
+Node has pool of worker threads running behind (not sure if V8 even does it by having internal threads). <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">So once the work is done and if call stack is clear the call backs are executed .</a>. 
+
+**What is the downside of this single threaded model ?**
+If you have a CPU intensive operation running, thats it... it will block everything else as there is one and only one thread.
 
 Other interesting links I found
 
