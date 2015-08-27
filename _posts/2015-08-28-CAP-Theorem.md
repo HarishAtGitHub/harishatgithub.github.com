@@ -84,19 +84,20 @@ Now having seen examples let us see what is the actual definition of CAP's theor
 
 Wikipedia says 
 
-```java
-In theoretical computer science, the CAP theorem, also known as Brewer's theorem, states that it is impossible for a distributed computer system to simultaneously provide all three of the following guarantees:
 
-1. Consistency (all nodes see the same data at the same time)
-2. Availability (a guarantee that every request receives a response about whether it succeeded or failed)
-3. Partition tolerance (the system continues to operate despite arbitrary partitioning due to network failures)
-```
+        In theoretical computer science, the CAP theorem, also known as Brewer's theorem, states that it is  
+        impossible for a distributed computer system to simultaneously provide all three of the following    guarantees:
+        1. Consistency (all nodes see the same data at the same time)
+        2. Availability (a guarantee that every request receives a response about whether it succeeded or failed)
+        3. Partition tolerance (the system continues to operate despite arbitrary partitioning due to network failures)
+
+
 
 So our analysis slightly varies from actual CAP theorem in the CA aspect. CAP theorem seems to say that CA system is possible. But our analysis says CA is meaningless.
 But our analysis is supported in [stackoverflow](http://stackoverflow.com/a/12347673/1597944) .
 Please get back to me in case there is a better explanation you have to show CA system is possible.
 
-Personal Opinion to support CAP theorem about CA system:
+**Personal 'May be' Opinion to support CAP theorem's CA system:**
 
 One way which I can think of where CA system is possible is when we make the write guarantee that it makes write available to all systems in a distributed system. If the system provides that guarantee during WRITE then each node can guarantee that even when there is network failure it can give the correct/latest value.
 If this understanding of mine is correct then it leads to some other understanding too : If WRITE is allowed without the guarantee that it will be written to all systems in a cluster, then READ needs to be careful enough to check with other systems in order to guarantee CONSISTENCY. If WRITE guarantees that it will be written to all systems in cluster, then READ can be casual without confirmation from other systems in the cluster. 
