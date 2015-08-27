@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Facts about range of data types in C - 1"
-description: "facts about data types in C"
-category: Interesting learnings about data types
-tags: [data types, c, interesting c facts and learnings]
+title: "CAP Theorem"
+description: "Trying to Understand CAP theorem"
+category: Distributed System
+tags: [distributed systems, CAP Theorem]
 ---
 {% include JB/setup %}
 
