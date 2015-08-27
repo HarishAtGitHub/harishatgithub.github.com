@@ -61,4 +61,21 @@ So we have sacrificed <b>A</b>VAILABLITY for the sake of being <b>C</b>ONSISTENT
 
 Such a system is called <b>CP</b> system .
 
+Ok , what about CA ?
+
+Whenever the nodes are distributed, there is a requirement that nodes need to communicate with each other or some master server. so there is compulsory communication . So when there is communication becomes a must, the chances of it getting disrupted also becomes something that cannot be ignored.
+
+So I am not sure if a pure CA system that is distributed can exist.
+
+Ok this is just the top level analysis.
+Let us go further deep to see if CA systems are possible.
+
+Now comes point 3
+
+3) I want the users to get the latest value of 'a'. I am not ready to fool the user. This fooling is not fair. I want consistency across the globe. When US user requests for 'a', I will try to check if the values of a in India and US are same , if not I will update the older one to latest and give the user the latest.But what if the checking with Indian server cannot happen due to network disconnectivity. so US server cannot talk to Indian server ?
+
+This is a problem. Unless I communicate with Indian server I cannot confirm that the value of 'a' is correct. But due to network disconnectivity they cannot communicate. I am unable to think of a solution as there is another condition "I am not ready to give 'Not available' info to user as he is a valuable client".
+
+so I cannot show user "Un Available" info but at the same time I am not able to make the CORRECT/LATEST value available to him .. This is like "cannot show unavailable when the correct/latest value is actually unavailable".
+So this state proves that we cannot have a CA system that is distributed.
 
