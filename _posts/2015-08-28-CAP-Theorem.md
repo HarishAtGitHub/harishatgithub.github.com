@@ -42,6 +42,7 @@ Now we see that the two servers are not in synch so how are we going to handle i
 
 
 We can say one of the below
+
 ***
 1) I want the users of my service who are requesting for 'a' to be happy with a value . I should never say 'I am sorry ! I am not avalibale'. When US user requests for 'a', I will try to check if the values of a in India and US are same , if not I will update the older one to latest and give the user the latest.
 But what if the checking with Indian server cannot happen due to network disconnectivity. so US server cannot talk to Indian server ?
