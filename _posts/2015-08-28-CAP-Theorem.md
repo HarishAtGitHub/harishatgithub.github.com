@@ -53,7 +53,12 @@ So we have sacrificed <b>C</b>ONSISTENCY for the sake of being <b>A</b>VAILABLE 
 
 Such a system is called <b>AP</b> system .
 
+![ap](https://cloud.githubusercontent.com/assets/5524260/9539106/6818fc34-4d6a-11e5-9504-b3afff51e289.png)
+
+
+
 ***
+
 2) I want the users to get the latest value of 'a'. I am not ready to fool the user. This fooling is not fair. I want consistency across the globe. When US user requests for 'a', I will try to check if the values of a in India and US are same , if not I will update the older one to latest and give the user the latest.
 But what if the checking with Indian server cannot happen due to network disconnectivity. so US server cannot talk to Indian server ?
 
@@ -62,6 +67,8 @@ Now I have taken a decision that when I am not able to guarantee that I am givin
 So we have sacrificed <b>A</b>VAILABLITY for the sake of being <b>C</b>ONSISTENT all the time and being tolerant to Network <b>P</b>ARTITION.
 
 Such a system is called <b>CP</b> system .
+
+![cp](https://cloud.githubusercontent.com/assets/5524260/9539107/7147cb78-4d6a-11e5-843b-cd79eb104c75.png)
 
 ***
 
@@ -83,8 +90,10 @@ This is a problem. Unless I communicate with Indian server I cannot confirm that
 so I cannot show user "Un Available" info but at the same time I am not able to make the CORRECT/LATEST value available to him .. This is like "cannot show unavailable when the correct/latest value is actually unavailable".
 So this state proves that we cannot have a CA system that is distributed.
 
+![ca](https://cloud.githubusercontent.com/assets/5524260/9539110/76f94498-4d6a-11e5-9fc2-88e4756426fd.png)
 
 ***
+
 Now having seen examples let us see what is the actual definition of CAP's theorem.
 
 Wikipedia says 
