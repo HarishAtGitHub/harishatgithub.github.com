@@ -9,7 +9,7 @@ tags: [distributed systems, CAP Theorem]
 
 ## CAP Theorem - Logical Analysis
 
-Let us analyse CAP Theorem with a simple example. From the example we shall get into CAP theorem gradually.
+Let us analyse CAP Theorem with a simple example(the example is one simple distributed system considered to understand CAP theorem). From the example we shall get into CAP theorem gradually.
 Let us say we have two servers one in India and one in US. It is kept in such a distributed
 way so that when person can from US access he can get data by querying US server and a person from India can be routed
 to Indian server.
