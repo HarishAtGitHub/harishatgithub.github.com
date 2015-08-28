@@ -104,6 +104,17 @@ Please get back to me in case there is a better explanation you have to show CA 
 
 **Personal 'May be' Opinion to support CAP theorem's CA system:**
 
-One way which I can think of where CA system is possible is when we make the write guarantee that it makes write available to all systems in a distributed system. If the system provides that guarantee during WRITE then each node can guarantee that even when there is network failure it can give the correct/latest value.
+One thing we can surely say is CA system is possible when there is no network partition.
+The problem is that in a distributed system network partition is something unavoidable.
+One way which I can think of where CA system is possible(even when there is a network partition) is when we make the write guarantee that it makes write available to all systems in a distributed system. If the system provides that guarantee during WRITE then each node can guarantee that even when there is network failure it can give the correct/latest value.
 If this understanding of mine is correct then it leads to some other understanding too : If WRITE is allowed without the guarantee that it will be written to all systems in a cluster, then READ needs to be careful enough to check with other systems in order to guarantee CONSISTENCY. If WRITE guarantees that it will be written to all systems in cluster, then READ can be casual without confirmation from other systems in the cluster. 
 If during WRITE some nodes are not reachable then WRITE should be rolled back. But the inner truth is that there should be communication among nodes in at least one phase among READ/WRITE to enable distrubted system to work with CONSISTENCY.
+
+
+**References :**
+
+1. [http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf](http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf)
+2. [http://markburgess.org/blog_cap.html](http://markburgess.org/blog_cap.html)
+3. [https://blogs.oracle.com/MAA/entry/the_cap_theorem_consistency_and](https://blogs.oracle.com/MAA/entry/the_cap_theorem_consistency_and)
+4. [http://stackoverflow.com/a/12347673/1597944](http://stackoverflow.com/a/12347673/1597944)
+5. [http://codahale.com/you-cant-sacrifice-partition-tolerance/](http://codahale.com/you-cant-sacrifice-partition-tolerance/)
