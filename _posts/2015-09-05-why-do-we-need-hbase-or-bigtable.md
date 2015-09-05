@@ -31,7 +31,7 @@ are many cases where there will be many tiny files of data . So for such systems
 
 And also because it is a system for large files , there is another problem when it comes to random reads of 
 specific data as the HDFS only knows where the 64 MB block is and it does not know anything about the data in
- it . So granularity is lost when it comes to randon read of specific data.
+ it . So granularity is lost when it comes to randon read of specific data. Not just random random reads, but random reads with minimum number of disk seeks is the problem.
  
 These are the areas where HDFS and Mapreduce will not fit.
 
