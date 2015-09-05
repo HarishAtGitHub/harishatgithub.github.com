@@ -37,3 +37,11 @@ These are the areas where HDFS and Mapreduce will not fit.
 
 To solve these problems , Google came up with the solution of [BigTable](http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf).
 Then the opensource world came up with HBase which is modelled after BigTable.
+
+
+**Referrences**:
+
+1. [My own experimentation with hadoop](https://github.com/HarishAtGitHub/hadoop-mapreduce-githubdata)
+2. [Hadoop Wiki](http://wiki.apache.org/hadoop/NameNode)
+3. [HBase - The Definitive Guide](http://www.gocit.vn/files/Oreilly.HBase.The.Definitive.Guide-www.gocit.vn.pdf)
+4. [Big Table research paper published by Google](http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
