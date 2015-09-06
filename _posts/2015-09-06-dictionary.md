@@ -124,7 +124,7 @@ for a hash function for a hast table alpha < = 1 is the ideal case.
 so in this ideal case search will take time of order O(1) .
 
 
-** Referrences: **
+**Referrences:**
 
 1. [Wikipedia -article on HashTable](https://en.wikipedia.org/wiki/Hash_table)
 2. [Wikipedia -article on Hash Function](https://en.wikipedia.org/wiki/Hash_function)
