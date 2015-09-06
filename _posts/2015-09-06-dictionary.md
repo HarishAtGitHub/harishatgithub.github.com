@@ -122,3 +122,10 @@ so average running time = O( 1 + alpha/2)
 
 for a hash function for a hast table alpha < = 1 is the ideal case.
 so in this ideal case search will take time of order O(1) .
+
+
+** Referrences: **
+
+1. [Wikipedia -article on HashTable](https://en.wikipedia.org/wiki/Hash_table)
+2. [Wikipedia -article on Hash Function](https://en.wikipedia.org/wiki/Hash_function)
+3. Nptel IIT lectures
