@@ -113,4 +113,4 @@ so average running time = O( 1 + alpha/2)
 
 
 for a hash function for a hast table alpha < = 1 is the ideal case.
-so in this idead case search will be O(1) .
+so in this ideal case search will take time of order O(1) .
