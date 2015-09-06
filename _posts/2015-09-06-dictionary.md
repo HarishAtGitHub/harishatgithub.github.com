@@ -9,7 +9,7 @@ tags: [datastructures, dictionary, datatype]
 
 ## Dictionary
 
-**Dictionary** is a data model that provides way to store elements in an efficient way so that key based retrieval can be fast. In essence this solves the problem of **SEARCHING**, as what we are trying to do is search for a key and then retrieve the value associated with it.In other
+**Dictionary** is a data type that models a way to store elements in an efficient way so that key based retrieval can be fast. In essence this solves the problem of **SEARCHING**, as what we are trying to do is search for a key and then retrieve the value associated with it.In other
 words dictionary provides efficient way to **search a particular key**(and hence to obtain the value in it).
 
 Dictionary can be realized by using
@@ -27,12 +27,16 @@ Dictionary can be realized by using
 There are a number of cases which will give different running times based on the nature of the elements
 
 **case 1: Ordered**
+
 ***
+
 Here we can use binary search as the elements in the array is ordered. So searching an element will take O(log(n)).
 But insertion and removal will take O(n) as after searching for the location the rest of the elements will have to be shifted.
 
 **case 2: Unordered**
+
 ***
+
 But most of the time elements will not be ordered. So let us talk about a more practical case where elements are unordered.
 Here there is no other go but to iterate all the elements. So searching an element will take O(n).
 Insertion will take  O(1) as the elements are unordered and no one care where we put the element.
@@ -40,7 +44,9 @@ But removal will take O(n) as it involves searching .
 So in this practical case, the searching takes worst case running time of O(n) which is bad.
 
 **case 3: Make the key the index of array**
+
 ***
+
 In both the above cases the value we were searching for were values in the array.But the index was just the position
 place holder. We know that an array in order to do array[index] it just takes O(1) . So why not use this 
 and make the index of the array the key we are searching for ? and value be stored in it as value.
@@ -97,12 +103,14 @@ An ideal hash function will distribute the keys uniformly among the slots in the
 If a hashtable has m slots, and there are n elements to be distributed in this hash table, the load factor
 is 
 
-```java
+```
     alpha = n/m.
 ```
 
 **Running Time :**
+
 ***
+
 So if n > m, and the hash function does the best job of distributing the n elements in m slots, then
 the worst case running time to search for an element is
 = time to hash  + worst case running time to search the element in the linked list
