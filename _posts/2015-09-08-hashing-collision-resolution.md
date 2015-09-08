@@ -26,11 +26,13 @@ So to solve the above problem Hash Function in general is said to have two steps
 2. Hash Compression Function - integers(hash code) h1 -> integer in range [0, N-1] (hash value) h2
 
 ```
+
 key ----> Hash Code function ---->  integer in arbitrary range 
 
 o/p1 ---> Hash Compression function ----> integer in range [0, N-1] 
 
 where N is the size of the Hash Table.
+
 ```
 
 Hash Code function is not needed when the key is already an integer.
@@ -60,8 +62,12 @@ So this results in collision.
 **3. Polynomial Accumulation:**
 
    So what is the way to solve the problem seen in Component sum ? Make the d in 3rd place different from d in first place.
-The solution stems from thinking about how our decimal number system(or any) works. How 121 differs from 211 ?
+The solution stems from thinking about how our decimal number system(or any) works. 
+
+How 121 differs from 211 ?
+
 121 = 1 * 10^2 + 2 * 10^1 + 1 * 10^0
+
 211 = 2 * 10^2 + 1 * 10^1 + 1 * 10^0
 
 the weightage based on the position of the digits has solved the problem differentiation.
