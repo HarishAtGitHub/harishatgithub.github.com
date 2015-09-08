@@ -26,11 +26,11 @@ So to solve the above problem Hash Function in general is said to have two steps
 2. Hash Compression Function - integers(hash code) h1 -> integer in range [0, N-1] (hash value) h2
 
 
-    key ----> Hash Code function ---->  integer in arbitrary range 
+         key ----> Hash Code function ---->  integer in arbitrary range 
 
-    o/p1 ---> Hash Compression function ----> integer in range [0, N-1] 
+         o/p1 ---> Hash Compression function ----> integer in range [0, N-1] 
 
-    where N is the size of the Hash Table.
+         where N is the size of the Hash Table.
 
 
 Hash Code function is not needed when the key is already an integer.
