@@ -25,7 +25,7 @@ So to solve the above problem Hash Function in general is said to have two steps
 1. Hash Code function -  keys -> integers (hash code) h1 (this integer can be in arbitrary range)
 2. Hash Compression Function - integers(hash code) h1 -> integer in range [0, N-1] (hash value) h2
 
-```
+```java
 
 key ----> Hash Code function ---->  integer in arbitrary range 
 
