@@ -38,6 +38,9 @@ Hash Code function is not needed when the key is already an integer.
 Let us look at some Hash Code functions.
 
 **Hash Code Functions**
+
+***
+
 **1. Integer Cast:**
    Interpret the keys as integer or
    Interpret the memory address as integer.
@@ -46,6 +49,7 @@ But this is a problem when the cast results in number greater than 32 bits becau
 Integer spans to a maximum 4bytes (or 32 bits).
 
 **2. Component Sum:**
+
    This is done to solve the case where it spans to length greater than 32 bits.
 Here if it is greater than 32 bits, we  split it into components of 32 bits and add them.
 
@@ -54,7 +58,8 @@ So this results in collision.
    
 
 **3. Polynomial Accumulation:**
-    So what is the way to solve the problem seen in Component sum ? Make the d in 3rd place different from d in first place.
+
+   So what is the way to solve the problem seen in Component sum ? Make the d in 3rd place different from d in first place.
 The solution stems from thinking about how our decimal number system(or any) works. How 121 differs from 211 ?
 121 = 1 * 10^2 + 2 * 10^1 + 1 * 10^0
 211 = 2 * 10^2 + 1 * 10^1 + 1 * 10^0
@@ -73,6 +78,9 @@ Few Others are : [Multiplication method](http://brpreiss.com/books/opus4/html/pa
 
 
 **Hash compression functions:**
+
+***
+
 Let's say the result of the Hash code function be k.
 
 Now our idea is to map k to integer within range [0, N-1].
@@ -84,11 +92,15 @@ h(k) = k mod m
 there is a problem when m is a power of 2.
 
 let us illustrate the problem with a logical analysis.
+
 if k is a binary represented as k    (k>m)
+
 k = abcd
+
 a,b,c,d is 0 0r 1
 
 k in decimal is  a*2^3 + b*2^2 + c*2^1 + d*2^0
+
 if m is a power of 2 < k then m should be either one of 2^2 or 2^1 or 2^0 (reason is because  2^4 < 2^3 + number less than 2^3)
 
 so if m is 2^e, and we do k mod m, we get bits from position e to 0.
@@ -122,8 +134,9 @@ if the collision occurs find another empty slot.
 What happens here is k mod m is found out, then that index is found, if the location is occupied then the next consecutive location is searched for empty state. If not empty it goes till it finds a slot that is having null(empty) and then stores it there.
 
 During search too if key k is searched (k mod m) is calculated, then we navigate to the resulting index and check whether k is there in it,if not it goes to next consecutive location and checks if k is there and this search goes on till a state where
-1) either null is found - it means that the element is not found
-2) key k is found - so the element is found.
+
+1. either null is found - it means that the element is not found
+2. key k is found - so the element is found.
 
 During delet we will do the search first and then delete it. delete key cannot be done by setting it to null, because it will break the
 search chain that is after this element. So instead of putting null, place a marker there(called as tombstone) and 
@@ -142,6 +155,7 @@ for every key we need not hop by 1 location. This can reduce the number of hops.
 empty then again it hops by the offset and this goes on till an empty location is found.
 
 h(k) = k mod m
+
 offset(k) = function(k)
 
 offset function helps finding offset for a key.
