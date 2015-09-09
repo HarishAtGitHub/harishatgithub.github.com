@@ -2,8 +2,8 @@
 layout: post
 title: "Hashing and Collision resolution"
 description: "Hashing and Collision resolution"
-category: datastructures
-tags: [datastructures]
+category: Data Structures
+tags: [Data Structures]
 ---
 {% include JB/setup %}
 
