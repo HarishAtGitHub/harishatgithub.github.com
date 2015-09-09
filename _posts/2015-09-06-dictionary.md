@@ -2,8 +2,8 @@
 layout: post
 title: "Story behind Dictionary data type - Analysis"
 description: "Story behind Dictionary data type"
-category: Datastructures
-tags: [datastructures, dictionary, datatype]
+category: Data Structures
+tags: [Data Structures, dictionary, datatype]
 ---
 {% include JB/setup %}
 
