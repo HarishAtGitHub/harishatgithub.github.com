@@ -33,11 +33,8 @@ Firstly, HBase is a NoSQL database or in simple words an aggregate oriented data
 joins as much a possible. So each value corresponding to a key is an aggregate (or in RDBMS terms the aggregate
 obtained after 'joins'). Ok now one problem of aggregation(joins) is solved. HBase is not just blind to the structure
 of this value corresponding to key. It wants to get one level deep. This is with the intent that users if 
-they ask for certain part inside that aggregate hbase should be able to serve it faster. Another there comes 
-the natural question if the aggregate has 3 parts in it and if user just asks for part 2 , why should other parts 
-part 1 and part 3 be even loaded ? . The answer came in the form of what is called as **column family**. This 
-is way of logically grouping columns, so as to provide that level of granularity in the value corresponing to 
-a  key.
+they ask for certain part inside that aggregate hbase should be able to serve it faster. And there comes 
+the natural question, "if the aggregate has 3 parts in it and if user just asks for part 2 , why should other parts part 1 and part 3 be even loaded ?" . The answer came in the form of what is called as **column family**. This is way of logically grouping columns, so as to provide that level of granularity in the value corresponing to a  key.
 
 ```javascript
 
@@ -54,14 +51,13 @@ rowkey-e:  {
             }
 ```
 
-In short if the user asks for column-family 1(i.e., group of columns 1,2,3, why should columns family(i.e., columns
+In short if the user asks for column-family 1(i.e., group of columns 1,2,3, why should column family (i.e., columns2
 4 and 5) be even loaded. So what hbase did is , it took the regions and it took the columns families in
 it and started viewing it as the fundamental unit of data inside regions.
 
 **point 2 :**
 
-Secondly, each region is of huge size . So everything cannot be served from memory. We need to use some RAM space and rest
-need to stay in disk(this design should enable faster and efficient searching). 
+Secondly, each region is of huge size . So everything cannot be served from memory. We need to use some RAM space for some and rest need to stay in disk(this design should enable faster and efficient searching). 
 Based on the key requested the disk files can be loaded and then searched for the key.
 
 Based on the above two points the following is known
@@ -99,4 +95,42 @@ So overall view is as follows
 ![detailed-region-regionserver](https://cloud.githubusercontent.com/assets/5524260/9878290/8c08f44a-5bdf-11e5-86fd-186bd896b351.jpg)
 
 
+**Code Referrence:**
 
+1. Store (Java doc: Interface for objects that hold a column family in a Region. Its a memstore and a set of zero or more StoreFiles, which stretch backwards over time.)
+
+   Location : [Store.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java)
+
+   Type : Interface 
+   
+   Package : org.apache.hadoop.hbase.regionserver
+   
+   Module : hbase-server
+   
+   Implementations : [HStore.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java)
+   
+2. MemStore (Java doc: The MemStore holds in-memory modifications to the Store. The MemStore functions should not be called in parallel. Callers should hold write and read locks. This is done in {@link HStore}.
+
+   Location : [MemStore.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java)
+   
+   Type: Interface
+   
+   Package : org.apache.hadoop.hbase.regionserver
+   
+   Module : hbase-server
+   
+   Implementations : [DefaultMemStore.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/DefaultMemStore.java)
+   
+3. StoreFile (Java doc: A Store data file.  Stores usually have one or more of these files.  They are produced by flushing the memstore to disk.  To create, instantiate a writer using {@link StoreFile.WriterBuilder} and append data. Be sure to add any metadata before calling close on the
+Writer (Use the appendMetadata convenience methods). On close, a StoreFile is sitting in the Filesystem.  To refer to it, create a StoreFile instance passing filesystem and path.  To read, call createReader(). StoreFiles may also reference store files in another Store.
+The reason for this weird pattern where you use a different instance for the writer and a reader is that we write once but read a lot more.)
+
+   Location : [StoreFile.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java)
+   
+   Type : Class
+   
+   Package : org.apache.hadoop.hbase.regionserver
+   
+   Module : hbase-server
+   
+   
