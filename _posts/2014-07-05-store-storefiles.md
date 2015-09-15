@@ -133,4 +133,7 @@ The reason for this weird pattern where you use a different instance for the wri
    
    Module : hbase-server
    
+   Note : StoreFile is a facade over [HFile](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java)
+   
+   
    
