@@ -2,7 +2,7 @@
 layout: post
 title: "Need for HBase"
 description: "Trying to Understand the need for HBase"
-category: Distributed System
+category: hbase
 tags: [distributed systems, HBase]
 ---
 {% include JB/setup %}
