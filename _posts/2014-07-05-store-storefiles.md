@@ -18,7 +18,7 @@ This can also be thought of as shards.
 HBase by the phenomenon called as autsharding it takes these regions and distributes it among its nodes called 
 **Region Server**.
 
-![region server and regions](https://cloud.githubusercontent.com/assets/5524260/9876028/8bf8c6e2-5bd0-11e5-94c2-2d61257c2aec.jpg)
+![region server and regions 2](https://cloud.githubusercontent.com/assets/5524260/9878258/5ebdd690-5bdf-11e5-86dc-cf8342ffeda4.jpg)
 
 So now the Regions(or shards) have reached the Region Servers.
 
@@ -90,6 +90,13 @@ so
 So now the region is viewed by HBase as following
 
 ![hbase-internal](https://cloud.githubusercontent.com/assets/5524260/9876582/cdf8c05c-5bd4-11e5-9bd5-b28ce50b16d5.jpg)
+
+![equationstore-storefiles](https://cloud.githubusercontent.com/assets/5524260/9877998/e9e106f4-5bdd-11e5-90e8-85632cc85445.jpg)
+
+
+So overall view is as follows 
+
+![detailed-region-regionserver](https://cloud.githubusercontent.com/assets/5524260/9878290/8c08f44a-5bdf-11e5-86fd-186bd896b351.jpg)
 
 
 
