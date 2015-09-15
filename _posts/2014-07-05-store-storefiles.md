@@ -137,3 +137,11 @@ The reason for this weird pattern where you use a different instance for the wri
    
    
    
+**Subject Referrence :**
+
+1. [http://hbase.apache.org/book.html](http://hbase.apache.org/book.html)
+2. [HBase- The Definitive Guide- O'Reilly](http://www.gocit.vn/files/Oreilly.HBase.The.Definitive.Guide-www.gocit.vn.pdf)
+3. [Google Big Table Research Paper](http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
+3. [mapr.com](https://www.mapr.com/blog/in-depth-look-hbase-architecture#.VfgiNCe1Gkq)
+4. [Cloudera](http://blog.cloudera.com/blog/2012/06/hbase-io-hfile-input-output/)
+5. [Sema Text](http://blog.sematext.com/2012/07/16/hbase-memstore-what-you-should-know/)
