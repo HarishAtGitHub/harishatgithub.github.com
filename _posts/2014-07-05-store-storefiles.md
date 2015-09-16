@@ -110,7 +110,7 @@ So overall view is as follows
    
    Implementations : [HStore.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java)
    
-2. MemStore (Java doc: The MemStore holds in-memory modifications to the Store. The MemStore functions should not be called in parallel. Callers should hold write and read locks. This is done in {@link HStore}.
+2. MemStore (Java doc: The MemStore holds in-memory modifications to the Store. The MemStore functions should not be called in parallel. Callers should hold write and read locks. This is done in HStore).
 
    Location : [MemStore.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java)
    
@@ -134,7 +134,7 @@ The reason for this weird pattern where you use a different instance for the wri
    
    Module : hbase-server
    
-   Note : StoreFile is a facade over [HFile](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java)
+   Note : StoreFile is a facade over HFile ([HFile.java](https://github.com/apache/hbase/blob/1.0/hbase-server/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java))
    
    
    
