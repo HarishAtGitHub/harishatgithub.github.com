@@ -36,8 +36,7 @@ of this value corresponding to key. It wants to get one level deep. This is with
 they ask for certain part inside that aggregate hbase should be able to serve it faster. And there comes 
 the natural question, "if the aggregate has 3 parts in it and if user just asks for part 2 , why should other parts part 1 and part 3 be even loaded ?" . The answer came in the form of what is called as **column family**. This is way of logically grouping columns, so as to provide that level of granularity in the value corresponing to a  key.
 
-<pre>
-  <code class="javascript">
+```javascript
 
 rowkey-e:  {
                 column-family-1: {
@@ -51,8 +50,7 @@ rowkey-e:  {
                                  }
             }
             
-  </code>
-</pre>
+```
 
 In short if the user asks for column-family 1(i.e., group of columns 1,2,3, why should column family (i.e., columns2
 4 and 5) be even loaded. So what hbase did is , it took the regions and it took the columns families in
