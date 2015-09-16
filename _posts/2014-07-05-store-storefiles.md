@@ -52,6 +52,14 @@ rowkey-e:  {
             
 ```
 
+```python
+print("hello, world")
+class Hello:
+  def __init__(self):
+    print("summs")
+
+```
+
 In short if the user asks for column-family 1(i.e., group of columns 1,2,3, why should column family (i.e., columns2
 4 and 5) be even loaded. So what hbase did is , it took the regions and it took the columns families in
 it and started viewing it as the fundamental unit of data inside regions.
