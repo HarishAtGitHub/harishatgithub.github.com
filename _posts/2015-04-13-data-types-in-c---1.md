@@ -87,16 +87,16 @@ This file has
 /* Maximum value an `unsigned long long int' can hold.  (Minimum is 0.)  */
 #   define ULLONG_MAX	18446744073709551615ULL
 #  endif /* ISO C99 */
-  </code>
-</pre>
+
+```
 
 So its from here that the information on range in hardcoded .
 
 #### How is it the **hardware** ?
 Here you can even see that the size or range varies depending on the hardware machine - word size .
 The snippet goes as follows
-<pre>
-  <code class="c">
+
+```c
 #  if __WORDSIZE == 64
 #   define ULONG_MAX	18446744073709551615UL
 #  else
