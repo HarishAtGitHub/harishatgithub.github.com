@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Story behind Dictionary data type - Analysis"
+title: "Dictionary Evolution - Space - Time Trade-Off"
 description: "Story behind Dictionary data type"
 category: Data Structures
 tags: [Data Structures, dictionary, datatype]
