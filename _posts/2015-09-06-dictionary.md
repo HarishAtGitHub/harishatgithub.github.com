@@ -115,7 +115,7 @@ So now had we designed the hash function in such a way that there was no collisi
 in the hands of the hash function to resolve the problem that emerged out of collision.
 
 An ideal hash function will distribute the keys uniformly among the slots in the Hash Table without collision.
-If a hashtable has m slots, and there are n elements to be distributed in this hash table, the load factor(denoted by alpha)
+If a hashtable has m slots, and there are n elements to be distributed in this hash table, the load factor(denoted by \\( \alpha )\\)
 is 
 
 <div>
@@ -129,13 +129,13 @@ is
 So if n > m, and the hash function does the best job of distributing the n elements in m slots, then
 the worst case running time to search for an element is
 = time to hash  + worst case running time to search the element in the linked list
-= O(1 + alpha)
+= O(1 + \\( \alpha )\\)
 
 The average running time is when the element is found half way through the linked list.
-so average running time = O( 1 + alpha/2) 
+so average running time = O( 1 + \\( \alpha )\\/2) 
 
 
-for a hash function for a hast table alpha < = 1 is the ideal case.
+for a hash function for a hast table \\( \alpha )\\  < = 1 is the ideal case.
 so in this ideal case search will take time of order O(1) .
 
 
