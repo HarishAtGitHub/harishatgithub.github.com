@@ -98,12 +98,15 @@ So this is essentially storing the value associated with the key at the index = 
 With this approach the running time for search, insertion and deletion in a dictionary is O(1).
 Such a design is called HashTable.
 
+Did you notice one thing ? Even after reducing the space from an infinite one to a restricted one, we were still able to achieve retrieval time of O(1) . It seems like we have got everything perfectly even after compromise on the ideal assumption. This is impossible without having lost something else. This is like the "Conservation Law" in physics. So by trying to achieve O(1) despite space restriction what have we lost ? The following shows the answer.
+
 **What happens when two keys are hashed to same index in array ?**
 
-This is called **Collision**. Ok, How can we resolve it ? One way is whenever collision occurs instead of replacing
-the element in the array why not append to it the new value. So this need the value of an array to be an easily 
-extendable list. May be  a linked list. so values in array are now linked list and when collision occurs the
-new value is chained to the existing linked list. This way of resolving this problem of collision is called **Chaining**.
+This is called **Collision**. This is the implication of us moving away from assumption of infinite space. Had there been infinite space we would not have had collisions. 
+
+Ok, We know that this is something that we cannot avoid in finite space systems, so let us think about how we can resolve it .
+
+One way is whenever collision occurs instead of replacing the element in the array why not append to it the new value. So this need the value of an array to be an easily extendable list. May be  a linked list. so values in array are now linked list and when collision occurs the new value is chained to the existing linked list. This way of resolving this problem of collision is called **Chaining**.
 But there is a  problem in this approach ... If in worst case all our keys get mapped to same index then the searching time
 will again be of order O(n).This is a problem that we need to solve.
 
