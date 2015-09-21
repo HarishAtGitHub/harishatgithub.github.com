@@ -102,7 +102,7 @@ Did you notice one thing ? Even after reducing the space from an infinite one to
 
 **What happens when two keys are hashed to same index in array ?**
 
-This is called **Collision**. This is the implication of us moving away from assumption of infinite space. Had there been infinite space we would not have had collisions.  This can be considered similar to **ERROR** as we wanted every key to be mapped to unique location but however we met a overlap.
+This is called **Collision**. This is the implication of us moving away from assumption of infinite space. Had there been infinite space we would not have had collisions.  So because of collision it would increase time for finding a key from O(1), when many keys are at the collided location. So we have lost a little time because of finite space restriction. This fact makes us understand the "Space - Time tradeoff" better.
 
 Ok, We know that this is something that we cannot avoid in finite space systems, so let us think about how we can resolve it .
 
