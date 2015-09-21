@@ -102,7 +102,7 @@ Did you notice one thing ? Even after reducing the space from an infinite one to
 
 **What happens when two keys are hashed to same index in array ?**
 
-This is called **Collision**. This is the implication of us moving away from assumption of infinite space. Had there been infinite space we would not have had collisions. 
+This is called **Collision**. This is the implication of us moving away from assumption of infinite space. Had there been infinite space we would not have had collisions.  This can be considered similar to **ERROR** as we wanted every key to be mapped to unique location but however we met a overlap.
 
 Ok, We know that this is something that we cannot avoid in finite space systems, so let us think about how we can resolve it .
 
