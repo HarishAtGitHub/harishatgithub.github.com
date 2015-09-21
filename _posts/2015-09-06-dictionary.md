@@ -72,6 +72,10 @@ So we cannot achieve either of them despite both guarantee key based retrieval b
 
 $$ space \varpropto \frac{1}{time} $$
 
+$$ space \times time = k $$
+
+k is now considered as a constant which will mean the factor to denote that the key is rightly identified.It is assumed as a constant as always we want the key to be identified correctly.
+
 so if space is infinite, time taken to find key is zero , and if time is infinite, space consumed is the least .
 
 So the natural solution to this deadlock is got by seeing the above inverse proportionality relation closely. The idea is the trade off between time and space.
