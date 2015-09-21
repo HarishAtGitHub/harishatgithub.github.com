@@ -68,7 +68,13 @@ The main issue is point 2 , huge wasted space. This approach assumes **infinite 
 ***
 
 So now we are caught in a dead lock. case 2 assumes infinite time and case 3 assumes infinite space .
-So we cannot achieve either of them despite both guarantee key based retrieval because of the inherent assumptions of infinite time and space. So the natural solution is by the idea of trade off between time and space.
+So we cannot achieve either of them despite both guarantee key based retrieval because of the inherent assumptions of infinite time and space. It seems like the following relation will hold good here 
+
+$$ space \varpropto \frac{1}{time} $$
+
+so if space is infinite, time taken to find key is zero , and if time is infinite, space consumed is the least .
+
+So the natural solution to this deadlock is got by seeing the above inverse proportionality relation closely. The idea is the trade off between time and space.
 Let us see how it solves the problem.
 
 What if instead of giving infinite space in case 2, we try to give a restricted space in a clever way to an extent to which still we don't need infinite time to make key based retrieval.
