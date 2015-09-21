@@ -57,8 +57,8 @@ But this has the following problems
 2. even if we find a way to make any key to a number , there is yet another problem . What if the key is too large and 
 sparse. This will lead to a lot of empty spaces and a huge array.
 
-But the idea in case 3 seems good. It is possible to map any key to a number. So point 1 will not be an issue.
-The main issue is point 2 , huge wasted space.
+But the idea in case 3 seems good. It is possible to map any key to a number(if you say that the number has integer's maximum limit as the structure is an array, then the other way to do is just map key to memory address and store it in that memory location). So point 1 will not be an issue.
+The main issue is point 2 , huge wasted space. This approach assumes infinite space which is practically impossible.
 If we can fix point 2 by some mechanism , then we win. 
 
 what if we have array of size equal to number of elements we have but, make the elements(keys) be mapped to
