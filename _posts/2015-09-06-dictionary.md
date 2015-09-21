@@ -33,17 +33,18 @@ There are a number of cases which will give different running times based on the
 Here we can use binary search as the elements in the array is ordered. So searching an element will take O(log(n)).
 But insertion and removal will take O(n) as after searching for the location the rest of the elements will have to be shifted.
 
-**case 2: Unordered**
+**case 2: Unordered - (assumes infinite time)**
 
 ***
 
 But most of the time elements will not be ordered. So let us talk about a more practical case where elements are unordered.
 Here there is no other go but to iterate all the elements. So searching an element will take O(n).
+So what if the number of elements is huge . This approach will not just work out as it assumes **infinite time** available for calculation which is practically impossible.
 Insertion will take  O(1) as the elements are unordered and no one care where we put the element.
 But removal will take O(n) as it involves searching .
 So in this practical case, the searching takes worst case running time of O(n) which is bad.
 
-**case 3: Make the key the index of array**
+**case 3: Make the key the index of array - (assumes infinite space)**
 
 ***
 
@@ -58,10 +59,21 @@ But this has the following problems
 sparse. This will lead to a lot of empty spaces and a huge array.
 
 But the idea in case 3 seems good. It is possible to map any key to a number(if you say that the number has integer's maximum limit as the structure is an array, then the other way to do is just map key to memory address and store it in that memory location). So point 1 will not be an issue.
-The main issue is point 2 , huge wasted space. This approach assumes infinite space which is practically impossible.
-If we can fix point 2 by some mechanism , then we win. 
+The main issue is point 2 , huge wasted space. This approach assumes **infinite space** which is practically impossible. Had infinite space been available then we would retrieve keys definitely in O(1). 
 
-what if we have array of size equal to number of elements we have but, make the elements(keys) be mapped to
+
+
+**Space - Time Trade Off**
+
+***
+
+So now we are caught in a dead lock. case 2 assumes infinite time and case 3 assumes infinite space .
+So we cannot achieve either of them despite both guarantee key based retrieval because of the inherent assumptions of infinite time and space. So the natural solution is by the idea of trade off between time and space.
+Let us see how it solves the problem.
+
+What if instead of giving infinite space in case 2, we try to give a restricted space in a clever way to an extent to which still we don't need infinite time to make key based retrieval.
+
+What if we have array of size equal to number of elements we have but, make the elements(keys) be mapped to
 available indexes. so here index is not mapped to keys as in the previous case, but keys are mapped to indexes.
 So if someone has key value pairs as follows
 
