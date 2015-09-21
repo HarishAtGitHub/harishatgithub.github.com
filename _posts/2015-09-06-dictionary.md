@@ -132,10 +132,10 @@ the worst case running time to search for an element is
 = O(1 + \\( \alpha )\\)
 
 The average running time is when the element is found half way through the linked list.
-so average running time = O( 1 + $ \frac{\alpha}{2} $) 
+so average running time = O( 1 + \\(\frac{\alpha}{2}\\)) 
 
 
-for a hash function for a hast table $ \alpha $  < = 1 is the ideal case.
+for a hash function for a hast table \\(\alpha\\)   < = 1 is the ideal case.
 so in this ideal case search will take time of order O(1) .
 
 
