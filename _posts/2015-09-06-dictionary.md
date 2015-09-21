@@ -120,7 +120,7 @@ is
 
 ```
 <div>
-    \alpha = \frac{n}{m}
+    $$ \alpha = \frac{n}{m} $$
 </div>
 ```
 
