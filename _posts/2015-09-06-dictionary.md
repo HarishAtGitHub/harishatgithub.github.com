@@ -118,11 +118,9 @@ An ideal hash function will distribute the keys uniformly among the slots in the
 If a hashtable has m slots, and there are n elements to be distributed in this hash table, the load factor(denoted by alpha)
 is 
 
-```
 <div>
     $$ \alpha = \frac{n}{m} $$
 </div>
-```
 
 **Running Time :**
 
