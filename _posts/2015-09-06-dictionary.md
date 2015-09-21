@@ -138,6 +138,8 @@ so in this ideal case search will take time of order O(1) .
 
 **Referrences:**
 
-1. [Wikipedia -article on HashTable](https://en.wikipedia.org/wiki/Hash_table)
-2. [Wikipedia -article on Hash Function](https://en.wikipedia.org/wiki/Hash_function)
+1. [Algorithms in Java - Robert Sedgewick](http://www.amazon.in/Algorithms-Java-Parts-1-4-Edition-ebook/dp/B003KTMWDQ)
+2. [Time - Space tradeoff](https://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff)
 3. Nptel IIT lectures
+4. [Wikipedia -article on HashTable](https://en.wikipedia.org/wiki/Hash_table)
+5. [Wikipedia -article on Hash Function](https://en.wikipedia.org/wiki/Hash_function)
