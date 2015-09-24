@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "CAP Theorem"
+title: "CAP Theorem - Looking with distributed Eyes"
 description: "Trying to Understand CAP theorem"
 category: Distributed System
 tags: [distributed systems, CAP Theorem]
 ---
 {% include JB/setup %}
 
-## CAP Theorem - Logical Analysis
+## CAP Theorem - Looking with distributed Eyes - Logical Analysis
 
 Let us analyse CAP Theorem with a simple example(the example is one simple distributed system considered to understand CAP theorem). From the example we shall get into CAP theorem gradually.
 Let us say we have two servers one in India and one in US. It is kept in such a distributed
