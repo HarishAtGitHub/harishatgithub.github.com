@@ -17,18 +17,21 @@ the variable.
 
 **Explicit indication**
 
-var \<variableName\>: \<variableType\>
+     var \<variableName\>: \<variableType\>
 
 variableType tells the compiler that the variable is of this type.
 so for eg.
 
-var name: String
+    var name: String
 
 **Type Inference**
 
-var \<variableName\> = \<variableValue\>
+    var \<variableName\> = \<variableValue\>
 
 so from the variableValue it figures out the type of the variable.
+for eg.
+
+    var name = "Hello"
 
 So having known this, where comes strong typing ? Ya, having known the type of the variable, if the varible is 
 assigned a value of a different type then the compiler cannot tolerate as the expected type did not match the
