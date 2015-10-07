@@ -17,7 +17,7 @@ the variable.
 
 **Explicit indication**
 
-     var \<variableName\>: \<variableType\>
+     var <variableName>: <variableType>
 
 variableType tells the compiler that the variable is of this type.
 so for eg.
@@ -26,7 +26,7 @@ so for eg.
 
 **Type Inference**
 
-    var \<variableName\> = \<variableValue\>
+    var <variableName> = <variableValue>
 
 so from the variableValue it figures out the type of the variable.
 for eg.
