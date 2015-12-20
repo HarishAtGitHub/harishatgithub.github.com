@@ -114,11 +114,15 @@ Let us see the simplified form of the original math behind it to answer the ques
 
 $$ EncryptedMessage = (OriginalMessage)^e mod N $$
 
-public key is (e,N)
+$$ OriginalMessage = (EncryptedMessage)^d $$
 
-two ways to break
+public key is (e,N).
 
-**1) direct way (to get the message)**
+private key is d.
+
+There are two ways to break solution 2.
+
+**1) direct way (to decrypt the message by knowing the mechanism to decrypt)**
 
 as the equation has only one unknown
 (as (e,N) is known as public key, and EncryptedMessage is known , then the other unknown which is the OriginalMessage can be known.)
@@ -126,9 +130,7 @@ but the problem is that there is [no time and space efficient way to solve this 
 
 **2) indirect way (to get the key to open the message)**
 
-with the help of the private key d
-
-as 
+with the help of the private key d.
 
 $$ OriginalMessage = (EncryptedMessage)^d $$
 
@@ -137,7 +139,7 @@ but d is calculated using the factors of N which is p, q
 
 d = function(p,q)
 
-but the problem here is that the factoring of N (we know through public)  is damn difficult and 
+but the problem here is that the factoring of N is damn difficult and 
 [no time and space efficient way has been found out yet](https://en.wikipedia.org/wiki/Integer_factorization).
 
 
