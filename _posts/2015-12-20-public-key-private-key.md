@@ -32,7 +32,7 @@ manipulated by anyone in the middle.
 
 ## Solutions to Solve the needs:
 
-#Solution 1:
+### Solution 1:
 
 Let both the parties A and B share a common key to the lock and lock the information using that lock. Ya, this works
 well. A will write the information and then lock it with the key k and send it in internet and though evesdroppers will be
@@ -49,7 +49,7 @@ So this solution has a problem. The problem lies in key sharing.
 This kind of common key sharing approach is called symmetric encryption.
 
 
-#Solution 2:
+### Solution 2:
 
 In solution 1 the problem was the common key sharing part. So lets find an approach to solve this.
 
@@ -105,13 +105,13 @@ public key is (e,N)
 
 two ways to break
 
-** 1) direct way (to get the message) **
+**1) direct way (to get the message)**
 
 as the equation has only one unknown
 (as (e,N) is known as public key, and encrypted-message is known , then the other unknown which is the originalmessage can be known.)
 but the problem is that there is [no efficient way to solve this equation](https://en.wikipedia.org/wiki/RSA_problem) .
 
-** 2) indirect way (to get the key to open the message) **
+**2) indirect way (to get the key to open the message)**
 
 with the help of the private key d
 
