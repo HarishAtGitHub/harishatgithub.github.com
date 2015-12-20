@@ -144,5 +144,8 @@ Scenario 1 with solution 2 is seen in [Secure Shell](https://en.wikipedia.org/wi
 
 Scenario 2 with solution 2 is seen in [Token based authentication - jwt](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication) to have tampering detection of token.
 
+## Thanks
 
-Special Thanks to [Johannes Passing](https://www.linkedin.com/in/johannespassing) for helping me with my doubts that came to my mind while trying to understand this concept.
+***
+
+Special Thanks to [Johannes Passing](https://www.linkedin.com/in/johannespassing) for helping me with the doubts that came to my mind while trying to understand this concept.
