@@ -140,8 +140,8 @@ but the problem here is that the factoring of N (we know through public)  is dam
 
 ***
 
-Scenario 1 is seen in [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
+Scenario 1 with solution 2 is seen in [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
 
-Scenario 2 is seen in [Token based authentication - jwt](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication) to have tampering detection of token.
+Scenario 2 with solution 2 is seen in [Token based authentication - jwt](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication) to have tampering detection of token.
 
 
