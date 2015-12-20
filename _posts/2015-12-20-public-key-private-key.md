@@ -13,7 +13,7 @@ tags: [cryptography, symmetric encryption, asymmetric encryption]
 ***
 
 In the world dominated by internet there is common scenario where people need to communicate with each other.
-During this communication process information is being transmitted from one person to another or one machine to another or between
+During this communication process, information is being transmitted from one person to another or one machine to another or between
 machine and person. 
 
 ## Requirements while transmitting Information
