@@ -30,7 +30,7 @@ When one person A sends information to another person B, he wanted his informati
 
 When one person A sends information to another person B, he wanted his information to be 
 [tamper-proof](http://www.thefreedictionary.com/tamperproof) (Designed to prevent tampering or provide evidence of tampering).
-He is not worried if the information can be read or not. But only thing he is bothered about, is that it should not be
+He is not worried if the information can be read or not. But only thing he is bothered about is that, it should not be
 manipulated by anyone in the middle.
 
 
