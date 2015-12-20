@@ -136,5 +136,12 @@ but the problem here is that the factoring of N (we know through public)  is dam
 [no efficient way has been found out yet](https://en.wikipedia.org/wiki/Integer_factorization).
 
 
+## Applications:
+
+***
+
+Scenario 1 is seen in [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
+
+Scenario 2 is seen in [Token based authentication - jwt](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication) to have tampering detection of token.
 
 
