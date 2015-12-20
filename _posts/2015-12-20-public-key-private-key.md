@@ -10,11 +10,15 @@ tags: [cryptography, symmetric encryption, asymmetric encryption]
 
 ## Information Transmission
 
+***
+
 In the world dominated by internet there is common scenario where people need to communicate with each other.
 During this communication process information is being transmitted from one person to another or one machine to another or between
 machine and person. 
 
 ## Requirements while transmitting Information
+
+***
 
 Then came 2 different needs:
 
@@ -31,6 +35,8 @@ manipulated by anyone in the middle.
 
 
 ## Solutions to Solve the needs:
+
+***
 
 ### Solution 1:
 
@@ -72,7 +78,7 @@ K1 which is kept secret is called private key
 
 K2 which is distributed openly is called public key.
 
-**How it solves scenario 2:**
+**How it solves Scenario 2:**
 
 K1 is with only the person who is intended to send the message and K2 is distributed among people who want to 
 read messages from A. Now A wants to send a message B and he does not want anyone to tamper it.
@@ -97,9 +103,11 @@ So solution 2 solves it perfectly well.
 
 ## Is there a way to break solution 2 ?
 
+***
+
 Let us see the simplified form of the original math behind it to answer the question .
 
-$$ encryptedmessage = (originalmessage)^e mod N $$
+$$ EncryptedMessage = (OriginalMessage)^e mod N $$
 
 public key is (e,N)
 
@@ -117,7 +125,7 @@ with the help of the private key d
 
 as 
 
-$$ message = (encryptermessage)^d $$
+$$ OriginalMessage = (EncryptedMessage)^d $$
 
 so if we figure out d then we can get the message 
 but d is calculated using the factors of N which is p, q
