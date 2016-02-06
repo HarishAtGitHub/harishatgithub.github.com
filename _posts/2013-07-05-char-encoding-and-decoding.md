@@ -90,13 +90,13 @@ Instead of putting it like the rules let us see in decimals the range and the by
 </tr>
 <tr>
    <td>0 - 127</td>
-   <td> $$ 0 to  2^7 - 1 $$</td>
+   <td> $$ 0  \, to  \, 2^7 - 1 $$</td>
    <td>0000 - 007F </td>
    <td>1</td>
 </tr>
 <tr>
    <td>128 - 2047</td>
-   <td> $$ 2^{7}  to 2^{11} - 1 $$</td>
+   <td> $$ 2^{7}  \, to  \, 2^{11} - 1 $$</td>
    <td>0080 - 07FF </td>
    <td>2</td>
 </tr>
