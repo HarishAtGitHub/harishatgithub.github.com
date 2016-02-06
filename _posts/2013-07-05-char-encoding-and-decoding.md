@@ -19,29 +19,29 @@ for eg. in UTF-8 charset (here after we shall base all the explanation based on 
 
 the character A will occupy one byte
 
-String a = “A”
+    String a = “A”
 
-a.getBytes().length is 1
+    a.getBytes().length is 1
 
-bytes is [65]
-
-String a = "ë"
-
-a.getBytes().length is 2
-
-bytes is [-61, -85]
+    byte array is [65]
 
 
-so the first character "A" one took one byte.
+    String a = "ë"
 
-but the second one "ë" took two bytes.
+    a.getBytes().length is 2
+
+    byte array is [-61, -85]
+
+
+so the first character "A" took one byte.
+
+but the second character "ë" took two bytes.
 
 The System. propety file.encoding(in java) will take care of how it is stored.
 
 
-When some characters are 1 byte and some are two bytes and some are more bytes, how will the decoding happen ?
-What I am saying is that if in the scheme we say every character is N bytes then it means that to decode every character I should fetch N bytes
-but now it is a mix of 1 to N bytes. Is the decoding possible ?
+**When some characters are 1 byte and some are two bytes and some are more bytes, how will the decoding happen ?
+What I am saying is that if in the scheme we say every character is N bytes then it means that to decode every character I should fetch N bytes but now it is a mix of 1 to N bytes. Is the decoding possible ?**
 
 So thinking about this, the logical answer would be that in the first byte itself there should be an indicator of how
 many of the subsequent bytes will form the character.
@@ -75,17 +75,17 @@ Keeping in mind the [Wikipedia table](https://en.wikipedia.org/wiki/UTF-8#Descri
 
 [ë](http://www.utf8-chartable.de/unicode-utf8-table.pl?utf8=bin)
 
-110  xxxxx   10  xxxxxx 
+     110  xxxxx   10  xxxxxx 
 
-110  00011   10  101011	
+     110  00011   10  101011	
 
      00011       101011  → binary equivalent of hex pointing to ë
 
 [ɟ](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=512&utf8=bin)
 
-110  xxxxx  10 xxxxxx 
+     110  xxxxx  10 xxxxxx 
 
-110  01001  10 011111	 
+     110  01001  10 011111	 
 
      01001     011111   → binary equivalent of hex pointing to ɟ
 
@@ -95,11 +95,11 @@ if the following is the set of digits to decode
 
 the first byte starts with 1110 so it means we should decode 3 bytes to decode the character as expected (from the rules of table https://en.wikipedia.org/wiki/UTF-8#Description).
 
-1110xxxx    10xxxxxx    10xxxxxx
+    1110xxxx    10xxxxxx    10xxxxxx
 
-11100000    10101101    10011111
+    11100000    10101101    10011111
 
-so 0000 101101 011111 is the binary to be decoded.
+    so  0000      101101      011111 is the binary to be decoded.
 
 The binary is B5F in  hexadecimal (If you don't know to convert use this [binary to hex converter website](http://www.binaryhexconverter.com/binary-to-hex-converter)) )
 Now from [map](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=2816&number=1024&utf8=bin) B5F means  ୟ
