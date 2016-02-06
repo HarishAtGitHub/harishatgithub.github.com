@@ -79,8 +79,21 @@ so it will read the first byte ,
 
 after decoding x bytes it will consider the next byte to belong to next character.
 
-ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to
-the hex code mapping to each character be stored ?
+Instead of putting it like the rules let us see in decimals the range and the byte change in them
+
+Decimal range | Hex range | Number of Bytes
+------------- | ----------|----------------
+0 - 127 | 0000 - 007F | 1
+128 - 2047 | 0000 - 007F | 2
+2048 - 65535 | 0000 - 007F | 3
+65536 - 2097151 | 0000 - 007F | 4
+2097152 - 67108863 | 0000 - 007F | 5
+67108864 - 2147483647 | 0000 - 007F | 6
+
+
+
+
+ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
 
 It seems like it just packs the binary equivalent of the hex into the rest of the bits(other than the indicator for bytes). 
 Keeping in mind the [Wikipedia table](https://en.wikipedia.org/wiki/UTF-8#Description), what I am trying to say is that it will fill the bits in place of the ‘x’.
