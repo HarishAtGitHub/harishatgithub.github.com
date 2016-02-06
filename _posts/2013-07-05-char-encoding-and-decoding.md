@@ -135,7 +135,7 @@ Then it takes the next byte 01000001
 It again starts with 0 so follow the similar procedure as above and we find that it maps to 
 A
 
-#Third character
+###Third character
 
 Then now get next byte 11000011 so it starts with 110 so we should get 2 bytes to decode the character
 
