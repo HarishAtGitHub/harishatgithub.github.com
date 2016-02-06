@@ -114,34 +114,42 @@ Now from [map](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=2816&num
 
 How to decode this entire string (which is a collection of characters) ?
 
-01000010 01000001 11000011 10110000 11100010 10001011 10110011
+    01000010 01000001 11000011 10110000 11100010 10001011 10110011
 
-**Solution:**
+**Pseudocode:**
 
-get first byte 01000010
+###First Character
 
-it starts with 0 so so the character has only one byte so in 01000010
+Get first byte 01000010
+
+It starts with 0 so the character has only one byte so in 01000010
 
 1000010 is to be decoded.
 
 it is 42 in hex which [maps to B](http://www.utf8-chartable.de/unicode-utf8-table.pl?utf8=bin).
 
+###Second character
+
 Then it takes the next byte 01000001
 
-it again starts with 0 so follow the similar procedure as above and we find that it maps to 
+It again starts with 0 so follow the similar procedure as above and we find that it maps to 
 A
 
-then now get next byte 11000011 so it starts with 110 so we should get 2 bytes to decode the character
+#Third character
 
-so  11000011 10110000 will form the character.
+Then now get next byte 11000011 so it starts with 110 so we should get 2 bytes to decode the character
+
+So  11000011 10110000 will form the character.
 
 00011110000 is the binary to be decoded.
 
 it is F0  in hex  . and this hex [maps to ð](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) .
 
-then now take the next byte 11100010 .
+###Fourth character
 
-it starts with 1110 so the three byte group will form a character.
+Then now take the next byte 11100010 .
+
+It starts with 1110 so the three byte group will form a character.
 so 
 
 11100010 10001011 10110011 is the three byte group
@@ -149,6 +157,8 @@ so
 0010001011110011 maps to hex 22F3 .
 
 now see from map that 22F3 [maps to ⋳](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=7936&number=1024&utf8=bin).
+
+###Conclusion
 
 so 01000010 01000001 11000011 10110000 11100010 10001011 10110011 meant BAð⋳.
 
