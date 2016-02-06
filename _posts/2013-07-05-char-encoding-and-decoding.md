@@ -88,7 +88,7 @@ Instead of putting it like the rules let us see in decimals the range and the by
    <th>Number of Bytes</th>
 </tr>
 <tr>
-   <td>0 - 12</td>
+   <td>0 - 127</td>
    <td>0000 - 007F </td>
    <td>1</td>
 </tr>
