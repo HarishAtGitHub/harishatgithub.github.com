@@ -126,7 +126,8 @@ Instead of putting it like the rules let us see in decimals the range and the by
 </tr>
 </table>
 
-(Apart from the actual picture, note that range of int in java is $$ -2^{31}  \, to  \, 2^{31} - 1 $$)
+(Apart from the actual picture, note that range of int in java is $$ -2^{31}  \, to  \, 2^{31} - 1 $$
+so casting any character to int will not cause it overflow)
 
 ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
 
