@@ -81,20 +81,45 @@ after decoding x bytes it will consider the next byte to belong to next characte
 
 Instead of putting it like the rules let us see in decimals the range and the byte change in them
 
-
-Decimal range           | Hex range           | Number of Bytes
------------------------ | --------------------|----------------
-0 - 127                 | 0000 - 007F         | 1
-128 - 2047              | 0080 - 07FF         | 2
-2048 - 65535            | 0800 - FFFF         | 3
-65536 - 2097151         | 10000 - 1FFFFF      | 4
-2097152 - 67108863      | 200000 - 3FFFFFF    | 5
-67108864 - 2147483647   | 4000000 - 7FFFFFFF  | 6
-
-<table>
-<tr><td>hello</td><td>world</td></tr>
-<tr><td>jumba</td><td>dance</td></tr>
+<table class="table table-striped">
+<tr>
+   <th>Decimal range </th>
+   <th>Hex range</th>
+   <th>Number of Bytes</th>
+</tr>
+<tr>
+   <td>0 - 12</td>
+   <td>0000 - 007F </td>
+   <td>1</td>
+</tr>
+<tr>
+   <td>128 - 2047</td>
+   <td>0080 - 07FF </td>
+   <td>2</td>
+</tr>
+<tr>
+   <td>2048 - 65535</td>
+   <td>0800 - FFFF</td>
+   <td>3</td>
+</tr>
+<tr>
+   <td>65536 - 2097151 </td>
+   <td>10000 - 1FFFFF</td>
+   <td>4</td>
+</tr>
+<tr>
+   <td>2097152 - 67108863</td>
+   <td>200000 - 3FFFFFF</td>
+   <td>5</td>
+</tr>
+<tr>
+   <td>67108864 - 2147483647</td>
+   <td>4000000 - 7FFFFFFF</td>
+   <td>6</td>
+</tr>
 </table>
+
+
 ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
 
 It seems like it just packs the binary equivalent of the hex into the rest of the bits(other than the indicator for bytes). 
