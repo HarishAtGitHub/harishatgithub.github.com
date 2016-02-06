@@ -48,21 +48,33 @@ many of the subsequent bytes will form the character.
 
 And we are right. [Wikipedia](https://en.wikipedia.org/wiki/UTF-8#Description) says that the rule is as follows
 
-if the first byte starts with 0 then it is a single byte char
-if the first byte starts with 110 then it is 2 byte
-if the first byte starts with 1110 then it is 3 byte
-if the first byte starts with 11110 then it is 4 byte
-if the first byte starts with 111110 then it is 5 byte
-if the first byte starts with 1111110 then it is 6 byte
+    if the first byte starts with 0 then it is a single byte char
+
+    if the first byte starts with 110 then it is 2 bytes
+    
+    if the first byte starts with 1110 then it is 3 bytes
+    
+    if the first byte starts with 11110 then it is 4 bytes
+   
+    if the first byte starts with 111110 then it is 5 byte
+    
+    if the first byte starts with 1111110 then it is 6 byte
+    
+    
 
 so it will read the first byte , 
 
-if the first byte starts with 0 then it is a single byte char so it decodes only that byte
-if the first byte starts with 110 then it is 2 byte so it decodes 2 consecutive  bytes
-if the first byte starts with 1110 then it is 3 byte so it decodes 3  consecutive bytes
-if the first byte starts with 11110 then it is 4 byte so it decodes 4 consecutive bytes
-if the first byte starts with 111110 then it is 5 byte so it decodes 5 consecutive bytes
-if the first byte starts with 1111110 then it is 6 byte so it decodes 6 consecutive bytes
+    if the first byte starts with 0 then it is a single byte char so it decodes only that byte
+    
+    if the first byte starts with 110 then it is 2 byte so it decodes 2 consecutive  bytes
+    
+    if the first byte starts with 1110 then it is 3 byte so it decodes 3  consecutive bytes
+    
+    if the first byte starts with 11110 then it is 4 byte so it decodes 4 consecutive bytes
+    
+    if the first byte starts with 111110 then it is 5 byte so it decodes 5 consecutive bytes
+    
+    if the first byte starts with 1111110 then it is 6 byte so it decodes 6 consecutive bytes
 
 
 after decoding x bytes it will consider the next byte to belong to next character.
