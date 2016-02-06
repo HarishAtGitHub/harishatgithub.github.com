@@ -102,31 +102,31 @@ Instead of putting it like the rules let us see in decimals the range and the by
 </tr>
 <tr>
    <td>2048 - 65535</td>
-   <td> $$ 2^{11} to 2^{16} - 1 $$</td>
+   <td> $$ 2^{11}  \, to  \, 2^{16} - 1 $$</td>
    <td>0800 - FFFF</td>
    <td>3</td>
 </tr>
 <tr>
    <td>65536 - 2097151 </td>
-   <td> $$ 2^{16} to 2^{21} - 1 $$</td>
+   <td> $$ 2^{16}  \, to  \, 2^{21} - 1 $$</td>
    <td>10000 - 1FFFFF</td>
    <td>4</td>
 </tr>
 <tr>
    <td>2097152 - 67108863</td>
-   <td> $$ 2^{21} to 2^{26} - 1 $$</td>
+   <td> $$ 2^{21}  \, to  \, 2^{26} - 1 $$</td>
    <td>200000 - 3FFFFFF</td>
    <td>5</td>
 </tr>
 <tr>
    <td>67108864 - 2147483647</td>
-   <td> $$ 2^{26} to 2^{31} - 1 $$</td>
+   <td> $$ 2^{26}  \, to  \, 2^{31} - 1 $$</td>
    <td>4000000 - 7FFFFFFF</td>
    <td>6</td>
 </tr>
 </table>
 
-(Apart from the actual picture, note that range of int in java is $$ -2^31 to 2^31 - 1 $$)
+(Apart from the actual picture, note that range of int in java is $$ -2^{31}  \, to  \, 2^{31} - 1 $$)
 
 ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
 
