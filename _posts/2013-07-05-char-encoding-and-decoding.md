@@ -84,7 +84,7 @@ Instead of putting it like the rules let us see in decimals the range and the by
 <table class="table table-striped">
 <tr>
    <th>Decimal range </th>
-   <th>Range in Power of two </th>
+   <th style="text-align: center">Range in Power of two </th>
    <th>Hex range</th>
    <th>Number of Bytes</th>
 </tr>
