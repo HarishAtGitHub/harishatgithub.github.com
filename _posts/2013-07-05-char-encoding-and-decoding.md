@@ -2,7 +2,7 @@
 layout: post
 title: "Character encoding and decoding"
 description: "Character encoding and decoding"
-category: Character encoding and decoding
+category: utf8
 tags: [character encoding, character decoding, utf-8 encoding and decoding]
 ---
 {% include JB/setup %}
