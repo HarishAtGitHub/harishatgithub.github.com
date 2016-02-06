@@ -101,7 +101,7 @@ the first byte starts with 1110 so it means we should decode 3 bytes to decode t
 
     so  0000      101101      011111 is the binary to be decoded.
 
-The binary is B5F in  hexadecimal (If you don't know to convert use this [binary to hex converter website](http://www.binaryhexconverter.com/binary-to-hex-converter)) )
+The binary is B5F in  hexadecimal (If you don't know to convert use this [binary to hex converter website](http://www.binaryhexconverter.com/binary-to-hex-converter) )
 Now from [map](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=2816&number=1024&utf8=bin) B5F means  ୟ
 .
 
