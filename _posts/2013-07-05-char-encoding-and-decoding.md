@@ -81,16 +81,15 @@ after decoding x bytes it will consider the next byte to belong to next characte
 
 Instead of putting it like the rules let us see in decimals the range and the byte change in them
 
-Decimal range | Hex range | Number of Bytes
-------------- | ----------|----------------
-0 - 127 | 0000 - 007F | 1
-128 - 2047 | 0000 - 007F | 2
-2048 - 65535 | 0000 - 007F | 3
-65536 - 2097151 | 0000 - 007F | 4
-2097152 - 67108863 | 0000 - 007F | 5
-67108864 - 2147483647 | 0000 - 007F | 6
 
-
+Decimal range           | Hex range           | Number of Bytes
+----------------------- | --------------------|----------------
+0 - 127                 | 0000 - 007F         | 1
+128 - 2047              | 0080 - 07FF         | 2
+2048 - 65535            | 0800 - FFFF         | 3
+65536 - 2097151         | 10000 - 1FFFFF      | 4
+2097152 - 67108863      | 200000 - 3FFFFFF    | 5
+67108864 - 2147483647   | 4000000 - 7FFFFFFF  | 6
 
 
 ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
