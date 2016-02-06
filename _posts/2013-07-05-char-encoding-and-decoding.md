@@ -225,3 +225,64 @@ so 01000010 01000001 11000011 10110000 11100010 10001011 10110011 meant BAð⋳.
 
 (Use the [website](https://sites.google.com/site/nathanlexwww/tools/utf8-convert) to cross check your answers)
 
+
+##What does String.getBytes() in java do ?
+
+for example in 
+
+    String s = "ABCDEF⋳";
+
+ABCDEF is encoded as utf-8 as the per the explanation discussed above and stored.
+so it will be 
+
+[A](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000001
+
+[B](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000010
+
+[C](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000011
+
+[D](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000100
+
+[E](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000101
+
+[F](http://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=bin) - 01000110
+
+[⋳](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=7936&number=1024&utf8=bin) - 11100010 10001011 10110011
+
+note that these are the bytes stored in memory.
+
+Now on doing get bytes it gets each byte and does [signed-binary to decimal conversion](http://www.ugrad.cs.ubc.ca/~cs121/2009W1/Handouts/signed-binary-decimal-conversions.html) and returns
+
+for eg 01000001 starts with 0 so just the equivalent decimal(just by giving weightage in power of 2) is found and given
+
+but 11100010 starts with 1 so it is negative so it is complemented and 1 is added to it and the resulting 31 is showed as -31.
+
+by this process 
+
+     01000001 - 65 
+
+     01000010 - 66
+
+     01000011 - 67
+     
+     01000100 - 68
+     
+     01000101 - 69
+     
+     01000110 - 70
+
+     11100010 - -31
+     
+     10001011 - -117
+     
+     10110011 - -77
+
+(Note that from [Wikipedia table](https://en.wikipedia.org/wiki/UTF-8#Description) and the table above only the first 128 characters have positive decimals and everything else is negative as they all start with 10 and hence 1)
+
+so getBytes() returns
+
+[65, 66, 67, 68, 69, 70, -30, -117, -77]
+
+
+
+
