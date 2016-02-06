@@ -79,7 +79,7 @@ Keeping in mind the [Wikipedia table](https://en.wikipedia.org/wiki/UTF-8#Descri
 
      110  00011   10  101011	
 
-     00011       101011  → binary equivalent of hex pointing to ë
+          00011       101011  → binary equivalent of hex pointing to ë
 
 [ɟ](http://www.utf8-chartable.de/unicode-utf8-table.pl?start=512&utf8=bin)
 
@@ -87,7 +87,7 @@ Keeping in mind the [Wikipedia table](https://en.wikipedia.org/wiki/UTF-8#Descri
 
      110  01001  10 011111	 
 
-     01001     011111   → binary equivalent of hex pointing to ɟ
+          01001     011111   → binary equivalent of hex pointing to ɟ
 
 if the following is the set of digits to decode
 
