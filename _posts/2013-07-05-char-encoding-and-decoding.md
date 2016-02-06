@@ -91,7 +91,10 @@ Decimal range           | Hex range           | Number of Bytes
 2097152 - 67108863      | 200000 - 3FFFFFF    | 5
 67108864 - 2147483647   | 4000000 - 7FFFFFFF  | 6
 
-
+<table>
+<tr><td>hello</td><td>world</td></tr>
+<tr><td>jumba</td><td>dance</td></tr>
+</table>
 ok,  If we say that there are bits indicating how many bytes make a character, then, where are the actual bits equivalent to the hex code mapping to each character be stored ?
 
 It seems like it just packs the binary equivalent of the hex into the rest of the bits(other than the indicator for bytes). 
