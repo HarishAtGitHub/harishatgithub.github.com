@@ -283,6 +283,8 @@ so getBytes() returns
 
 [65, 66, 67, 68, 69, 70, -30, -117, -77]
 
+Note: [getBytes can also present the result in an encodeed form if we present a charset as argument](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#getBytes(java.nio.charset.Charset)).
+
 
 
 
