@@ -11,10 +11,11 @@ tags: [character encoding, character decoding, utf-8 encoding and decoding]
 
 
 We know that every things is 1's and 0's in the storage. But then comes the question : 
-how any is string represented as binary ?
+how any is string represented as binary internally ?
 
-Each character is converted to its hex code **as per the charset** and then to its equivalent binary and then stored.
-this storage may span one or two or more bytes based on the charset chosen.
+Each character is converted to its hex code **as per the charset**(it is said that java uses UTF-16 encoding by default for contents in string and stores it in disk and then when users ask for data it uses the system default encoding to re encode and give it : [reference 1](http://stackoverflow.com/a/4453307/1597944), [reference 2](http://www.oracle.com/technetwork/articles/javase/supplementary-142654.html)) and then to its equivalent binary and then stored.
+
+This storage may span one or two or more bytes based on the charset chosen by the language(though UTF-16 is the default language chosen one for storage, we to make the discussion simple we use UTF-8 everywhere for now).
 for eg. in UTF-8 charset (here after we shall base all the explanation based on UTF-8 charset)
 
 the character A will occupy one byte
