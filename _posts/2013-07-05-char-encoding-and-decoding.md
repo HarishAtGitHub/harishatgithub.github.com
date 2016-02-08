@@ -127,6 +127,10 @@ Instead of putting it like the rules let us see in decimals the range and the by
 </tr>
 </table>
 
+The above table is done to make the concept clear. If you want to learn the terminolgies used in the
+character set encoding, please see the diagram in [blog post on "Visualization of the Character encoding terminolgies"](http://harishatgithub.github.io/character%20set/2013/07/05/charset-terminologies). If you want to understand
+it even more, then please go to the links presented in that blog post.
+
 (Apart from the actual picture, note that range of int in java is $$ -2^{31}  \, to  \, 2^{31} - 1 $$
 so casting any character to int will not cause it overflow)
 
