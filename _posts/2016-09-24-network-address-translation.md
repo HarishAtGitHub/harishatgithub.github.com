@@ -66,7 +66,7 @@ use the public network. So each vm is a private ip. That is the reason
 we were not able to access it from the host system which was outside this private network set up by the virtual box.
 
 So How to make your vm accessible from the host ?
- . 
+
 Use [Host-only networking mode](https://www.virtualbox.org/manual/ch06.html#network_hostonly) or [bridged networking mode](https://www.virtualbox.org/manual/ch06.html#network_bridged)
 
 
@@ -80,3 +80,7 @@ Use [internal networking mode](https://www.virtualbox.org/manual/ch06.html#netwo
 How to make the vm's talk only to host and with other vm's and not with outside world ?
 
 Use [Host-only networking mode](https://www.virtualbox.org/manual/ch06.html#network_hostonly)
+
+What is the range of private IP's ?
+
+Read the [this article](http://whatismyipaddress.com/private-ip).
