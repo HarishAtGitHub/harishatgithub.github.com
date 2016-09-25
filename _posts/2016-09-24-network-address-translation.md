@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "what the heck is my virtual machine not accessible from my host machine ?"
+title: "why the heck is my virtual machine not accessible from my host machine ?"
 description: "NAT"
 category: utf8
 tags: [Network Address Translation, NAT,Networking]
 ---
 {% include JB/setup %}
 
-## what the heck is this NAT in the virtual box  network settings ?
+## why the heck is my virtual machine not accessible from my host machine ?
 
 I have a problem with my virtual machine I am running using virtual box. The problem is that, my vm, despite having its own ip
 '10.0.2.15', is not accessible from my host machine. Why ? Why ? Why ?
@@ -63,7 +63,7 @@ public ip (destination server) --> public ip (mediator) ---> private ip(client)
 # Returning back to the original problem 
 
 So this kind of NAT setup seems to be there in the virtual box too. [It does the address translation to make the local vm's
-use the public network[(https://www.virtualbox.org/manual/ch06.html). So each vm is a private ip. That is the reason
+use the public network](https://www.virtualbox.org/manual/ch06.html). So each vm is a private ip. That is the reason
 we were not able to access it from the host system which was outside this private network set up by the virtual box.
 
 
