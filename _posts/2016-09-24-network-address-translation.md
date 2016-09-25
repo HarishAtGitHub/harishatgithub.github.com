@@ -25,12 +25,11 @@ And that was the culprit.
 # NAT :
 
 I know a little about NAT. It is a way of mapping one IP address to another. But why is this needed ?
-One reason I know is to save ipv4 addresses from exhaustion. This big world with population nearling 7.4 billion people,
+One reason I know is to save ipv4 addresses from exhaustion. This big world with population nearing 7.4 billion people,
 with each one having 2 to 3 devices, cannot be accomodated within IPV4 address which is just 32 bits (so 2^32, which is nearly 
 4,294,967,296 ~ 4.2 billion). So people thought that instead of each device having a globally accessible network IP, why not
 give certain devices, private IP's, which are only accessible within a local network. But when they later feel that their
-machine needs to be accessible globally from anywhere(in other words, to make the IP Public), they can claim a public IP from
-the pool.
+machine needs to be accessible globally from anywhere(in other words, to make their machine Public), they can claim a public IP from the pool.
 
 But there is a problem. The private ip devices can call a public IP in internet and ask for details. But after that 
 server (public) processing the request, it needs to send it back to the private IP. But unfortunately the private IP 
@@ -62,8 +61,8 @@ public ip (destination server) --> public ip (mediator) ---> private ip(client)
 
 # Returning back to the original problem 
 
-So this kind of NAT setup seems to be there in the virtual box too. [It does the address translation to make the local vm's
-use the public network](https://www.virtualbox.org/manual/ch06.html). So each vm is a private ip. That is the reason
+So this kind of [NAT setup seems to be there in the virtual box too](https://www.virtualbox.org/manual/ch06.html#network_nat). It does the address translation to make the local vm's
+use the public network. So each vm is a private ip. That is the reason
 we were not able to access it from the host system which was outside this private network set up by the virtual box.
 
 
