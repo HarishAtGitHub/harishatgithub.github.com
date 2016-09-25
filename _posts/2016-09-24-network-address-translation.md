@@ -65,11 +65,18 @@ So this kind of [NAT setup seems to be there in the virtual box too](https://www
 use the public network. So each vm is a private ip. That is the reason
 we were not able to access it from the host system which was outside this private network set up by the virtual box.
 
+So How to make your vm accessible from the host ?
+ . 
+Use [Host-only networking mode](https://www.virtualbox.org/manual/ch06.html#network_hostonly) or [bridged networking mode](https://www.virtualbox.org/manual/ch06.html#network_bridged)
 
 
+**Just for knowledge :**
 
+How to make the vm's not accessible from the host, but still access other vm's in the same local network set by the 
+virtual box ?
 
+Use [internal networking mode](https://www.virtualbox.org/manual/ch06.html#network_internal)
 
+How to make the vm's talk only to host and with other vm's and not with outside world ?
 
-
-
+Use [Host-only networking mode](https://www.virtualbox.org/manual/ch06.html#network_hostonly)
