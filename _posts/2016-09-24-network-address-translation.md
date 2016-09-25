@@ -2,7 +2,7 @@
 layout: post
 title: "why the heck is my virtual machine not accessible from my host machine ?"
 description: "NAT"
-category: utf8
+category: networking
 tags: [Network Address Translation, NAT,Networking]
 ---
 {% include JB/setup %}
