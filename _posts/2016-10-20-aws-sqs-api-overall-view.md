@@ -10,7 +10,7 @@ tags: [aws, amazon web services, sqs, simple queueing service]
 ## AWS SQS API DOCS for python
 
 I found that the AWS SQS (Amazon Web Service Simple Queuing Service) python Boto3 API is difficult to understand and navigate.
-It is hard for any beginner to get a over all grasp of what the methods are. 
+It is hard for any beginner to get a overall grasp of what the methods are. 
 
 So I created a overall architecture view of the API's.
 
