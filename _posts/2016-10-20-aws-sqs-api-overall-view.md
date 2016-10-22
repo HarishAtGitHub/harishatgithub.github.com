@@ -14,7 +14,7 @@ It is hard for any beginner to get a overall grasp of what the methods are.
 
 So I created a overall architecture view of the API's.
 
-![api for sqs boto3](https://cloud.githubusercontent.com/assets/5524260/19580519/96000d84-96db-11e6-97f7-503bf596dd21.jpg)
+![api for sqs boto3](https://cloud.githubusercontent.com/assets/5524260/19615713/63fdcc8a-97b8-11e6-9145-579c76f56d37.jpg)
 
 For better view with click and navigate feature pls use this google drawing page [here](https://docs.google.com/drawings/d/1kKezJMZtO3wDhj9ColpIr9ONYByeGVBL0A_QVK1pSzU/edit?usp=sharing).
    
