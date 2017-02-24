@@ -81,7 +81,7 @@ This can be avoided by signing the token on the server side. Then, only people w
 key can read data. Even though they have the public key, they cannot add information to the token
 as they do not have the private key with which the signing is done. If tampered, the signature will not match
 and hence tampering can be detected easily. To know more about this encryption, please read my blog post on
-[Symmetric and Asymmetric encryption](http://harishatgithub.github.io/cryptography/2015/12/20/public-key-private-key/).
+[Symmetric and Asymmetric encryption](http://harishatgithub.github.io/cryptography/2015/12/20/public-key-private-key).
 The blog discusses how this method is safe and secure.
 
 **References:**
